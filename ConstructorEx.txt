@@ -1,0 +1,41 @@
+
+public class Constructor 
+{
+	Constructor()
+	{
+		System.out.println("Default Constructor called..");
+	}
+	
+	Constructor(int side)
+	{
+		System.out.println("Area of Square with side "+side+" : "+side*side);
+	}
+	
+	Constructor(String name)
+	{
+		 int length = name.length();
+		 String reverse="";
+	      for ( int i = length - 1; i >= 0; i-- )  
+	      {
+	    	  reverse = reverse + name.charAt(i); 
+	      }
+	           
+	      if (name.equalsIgnoreCase(reverse))
+	      {
+	    	  System.out.println("Entered string/number is a palindrome."); 
+	      }
+	           
+	      else
+	      {
+	    	  System.out.println("Entered string isn't a palindrome.");
+	      }
+	}
+	
+	public static void main(String str[])
+	{	
+		Constructor c = new Constructor();
+		Constructor c1 = new Constructor(12);
+		Constructor c2 = new Constructor("RacecaR");
+	}
+
+}

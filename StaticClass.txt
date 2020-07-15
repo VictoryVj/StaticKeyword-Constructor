@@ -1,0 +1,19 @@
+
+public class StaticClass 
+{
+	private static String str= "Vijay";
+	
+	static class Static_class
+	{
+		public void display()
+		{
+			System.out.println(str);
+		}
+	}
+	public static void main(String args[])
+	{
+		StaticClass.Static_class obj = new StaticClass.Static_class();
+		obj.display();
+	}
+
+}

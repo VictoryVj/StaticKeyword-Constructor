@@ -1,0 +1,30 @@
+
+public class StaticMethod 
+{
+	int count = 0;
+	int a = 10;
+	
+	StaticMethod()
+	{
+		count++;
+		System.out.println(count);
+		
+	}
+	
+	static void display()
+	{
+		System.out.println("static method");
+	}
+	static
+	{
+		System.out.println("Static Block");
+	}
+	
+	public static void main(String str[])
+	{
+		StaticMethod sm1 = new StaticMethod();
+		StaticMethod sm2 = new StaticMethod();
+		StaticMethod sm3 = new StaticMethod();
+	}
+
+}
